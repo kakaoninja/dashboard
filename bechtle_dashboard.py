@@ -162,7 +162,7 @@ with col1:
             # b=20,
         ),
     )
-    st.plotly_chart(fig_sector, use_container_width=True, width="stretch")
+    st.plotly_chart(fig_sector, width="stretch")
 with col2:
     #     # Regional attacks
     regional_data = {
@@ -209,7 +209,7 @@ with col2:
             # b=20,
         ),
     )
-    st.plotly_chart(fig_regional, use_container_width=True, width="stretch")
+    st.plotly_chart(fig_regional, width="stretch")
 
 # Ransomware statistics
 st.subheader("Ransomware Attacks on Organisations")
@@ -371,7 +371,7 @@ fig_stacked.add_annotation(
     font=dict(size=14, color="black", weight="bold"),
 )
 
-st.plotly_chart(fig_stacked, use_container_width=True)
+st.plotly_chart(fig_stacked, width="stretch")
 
 
 # st.info(
